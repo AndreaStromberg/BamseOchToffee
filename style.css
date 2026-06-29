@@ -1,0 +1,116 @@
+/* Variabler för färger och fonter */
+
+:root {
+  --color-lightblue: #e6f7ff;
+  --color-lightpurple: #e0d8d1;
+  --color-dark: #392d28;
+  --color-brown: #623a17;
+  --color-lightbrown: #e9b180;
+
+  --font-headings: "Neuton", serif;
+  --font-paragraphs: "Inter", sans-serif;
+}
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+
+  /* motverkar luddighet på texten i olika webbläsare */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--font-headings);
+  font-size: 64px;
+}
+h2 {
+  font-family: var(--font-headings);
+  font-size: 48px;
+}
+h3 {
+  font-family: var(--font-headings);
+  font-size: 32px;
+}
+p {
+  font-family: var(--font-paragraphs);
+  font-size: 24px;
+}
+
+/* Header */
+header {
+  height: 100px;
+  display: flex;
+  padding: 0 48px;
+  align-items: center;
+
+  background-color: var(--color-dark);
+  color: var(--color-lightblue);
+
+  span {
+    font-style: var(--font-headings);
+    font-size: 48px;
+  }
+}
+
+/* Ingress */
+.ingress {
+  /* height: 200px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+
+  h1 {
+    line-height: 100%;
+  }
+
+  .ingress-text {
+    line-height: 100%;
+  }
+
+  background-color: var(--color-lightbrown);
+  margin-top: -5px;
+}
+
+/* Sektionen Presentation */
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  padding: 48px;
+
+  article {
+    display: flex;
+    gap: 48px;
+  }
+
+  figure {
+    width: 1200px;
+    height: auto;
+  }
+}
+
+.intressen {
+  background-color: var(--color-lightbrown);
+}
