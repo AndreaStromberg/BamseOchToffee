@@ -156,6 +156,7 @@ header {
 
 .intressen {
   background-color: var(--color-lightbrown);
+  color: var(--color-dark);
   padding: 48px;
 
   .intressen-articles {
